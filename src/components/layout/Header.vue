@@ -23,10 +23,7 @@ interface Props {
   showBack?: boolean
 }
 
-const props = withDefaults(defineProps<Props>(), {
-  title: '📅 打卡日历',
-  showBack: false
-})
+const { title = '📅 打卡日历', showBack = false } = defineProps<Props>()
 
 const emit = defineEmits<{
   (e: 'back'): void

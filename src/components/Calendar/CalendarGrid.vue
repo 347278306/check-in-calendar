@@ -22,7 +22,7 @@
 
     <div class="calendar-grid">
       <div
-        v-for="(item, index) in days"
+        v-for="item in days"
         :key="item.date"
         class="calendar-day"
         :class="{
@@ -43,7 +43,6 @@
 
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue'
-import dayjs from 'dayjs'
 import type { CalendarDayData, CheckInRecord } from '@/types'
 import { generateCalendarDays } from '@/utils/date'
 

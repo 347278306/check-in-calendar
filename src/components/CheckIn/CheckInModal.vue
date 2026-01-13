@@ -45,7 +45,6 @@
 import { ref, computed, watch } from 'vue'
 import Modal from '@/components/common/Modal.vue'
 import { processImage, validateImage } from '@/utils/image'
-import { formatTimestamp } from '@/utils'
 import type { Calendar, CheckInRecord } from '@/types'
 
 interface Props {

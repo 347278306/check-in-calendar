@@ -91,6 +91,7 @@
 
     <!-- 打卡弹窗 -->
     <CheckInModal
+      v-if="calendar"
       v-model="showCheckInModal"
       :calendar="calendar"
       :date="selectedDate"
@@ -100,6 +101,7 @@
 
     <!-- 编辑日历弹窗 -->
     <AddCalendarModal
+      v-if="calendar"
       v-model="showEditModal"
       :calendar="calendar"
       @submit="handleUpdateCalendar"
