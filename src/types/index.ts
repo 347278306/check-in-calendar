@@ -1,6 +1,7 @@
 // 日历
 export interface Calendar {
   id: string
+  user_id: string
   name: string
   icon: string
   color: string
@@ -12,6 +13,7 @@ export interface Calendar {
 // 打卡记录
 export interface CheckInRecord {
   id: string
+  user_id: string
   calendarId: string
   date: string // YYYY-MM-DD
   checkInTime: number
